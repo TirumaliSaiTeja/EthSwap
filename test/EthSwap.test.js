@@ -1,13 +1,19 @@
 const Token = artifacts.require("Token");
 const EthSwap = artifacts.require("EthSwap");
 
+// Added chai test library
 require("chai")
   .use(require("chai-as-promised"))
   .should();
 
+// Added functionality for conversion of tokens to wei
+// Wei is the smaller version of ether
+
 function tokens(n) {
   return web3.utils.toWei(n, "ether");
 }
+
+// Added the condition for deployer and investor
 
 contract("EthSwap", ([deployer, investor]) => {
   let token, ethSwap;
