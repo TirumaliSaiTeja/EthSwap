@@ -6,6 +6,8 @@ import Navbar from "./Navbar";
 import Main from "./Main";
 import "./App.css";
 
+// Front-end UI
+
 class App extends Component {
   async componentWillMount() {
     await this.loadWeb3();
