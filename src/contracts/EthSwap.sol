@@ -12,6 +12,13 @@ contract EthSwap {
     // These logs are stored on blockchain and are accessible using address of the contract till the contract is present on the blockchain.
     // An event generated is not accessible from within contracts, not even the one which have created and emitted them.
 
+    // Mapping:
+    // Mapping is a reference type as arrays and structs.
+
+    // Considerations
+    // Mapping can only have type of storage and are generally used for state variables.
+    // Mapping can be marked public. Solidity automatically create getter for it.
+
     event TokensPurchased(
         address account,
         address token,
