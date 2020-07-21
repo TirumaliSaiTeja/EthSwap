@@ -7,6 +7,11 @@ contract EthSwap {
     Token public token;
     uint256 public rate = 100;
 
+    // Event:
+    // Event is an inheritable member of a contract. An event is emitted, it stores the arguments passed in transaction logs.
+    // These logs are stored on blockchain and are accessible using address of the contract till the contract is present on the blockchain.
+    // An event generated is not accessible from within contracts, not even the one which have created and emitted them.
+
     event TokensPurchased(
         address account,
         address token,
